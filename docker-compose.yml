@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_freelance
+    environment:
+      POSTGRES_USER: meu_usuario
+      POSTGRES_PASSWORD: minha_senha_123
+      POSTGRES_DB: subcontas_db
+    ports:
+      - "5432:5432"
